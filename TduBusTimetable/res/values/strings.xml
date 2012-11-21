@@ -1,8 +1,38 @@
 <resources>
 
     <string name="app_name">電大バス時刻表</string>
+    
+    <!-- main activity -->
+    
     <string name="menu_settings">Settings</string>
     <string name="main_read_button">閲覧</string>
     <string name="main_update_button">更新</string>
+    
+    <!-- select activity -->
+    
+    <string name="select_time_spinner">時期</string>
+    <string-array name="select_times">
+        <item>平日</item>
+        <item>土曜日</item>
+        <item>平日(休業中)</item>
+        <item>土曜日(休業中)</item>
+    </string-array>
+    
+    <string name="select_area_spinner">区間</string>
+    <string-array name="select_areas">
+        <item>高坂	→	大学</item>
+        <item>大学	→	高坂</item>
+        <item>北坂戸	→	大学</item>
+        <item>大学	→	北坂戸</item>
+        <item>熊谷	→	大学</item>
+        <item>大学	→	熊谷</item>
+        <item>鴻巣	→	大学</item>
+        <item>大学	→	鴻巣</item>
+        <item>高崎	→	大学</item>
+        <item>大学	→	高崎</item>
+    </string-array>
+    
+    <string name="select_show_button">表示</string>
+    <string name="select_text">見たい時刻表を選択して下さい</string>
 
 </resources>

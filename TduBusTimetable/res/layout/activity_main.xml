@@ -10,23 +10,23 @@
 	    android:orientation="horizontal" >
 	
 	    <Button
-	        android:id="@+id/button1"
+	        android:id="@+id/main_read_button"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1.00"
 	        android:text="@string/main_read_button" />
 		
 	    <Button
-	        android:id="@+id/button2"
+	        android:id="@+id/main_update_button"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1.00"
 	        android:text="@string/main_update_button" />
 	
 	</LinearLayout>
-
+
 	<TextView
-	    android:id="@+id/textView1"
+	    android:id="@+id/main_text"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_centerInParent="true"
