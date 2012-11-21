@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Intent;
 
 import android.widget.Button;
+import android.widget.Toast;
 import android.view.View;
 import android.view.View.OnClickListener;
 
@@ -37,19 +38,22 @@ class ReadButton implements OnClickListener
 	
 	public void onClick(View v)
 	{
-		switch(v.getId())
-		{
-		case R.id.main_read_button:
-		{
-			Intent intent = new Intent(activity.getApplicationContext(), SelectActivity.class);
-			activity.startActivity(intent);
-			break;
-		}
-		default:
-		{
-			assert false : "defaultÇÕÇ†ÇËÇ¶Ç»Ç¢";
-			break;
-		}
-		}
+		Intent intent = new Intent(activity.getApplicationContext(), SelectActivity.class);
+		activity.startActivity(intent);
+	}
+}
+
+class UpdateButton implements OnClickListener
+{
+	private MainActivity activity;
+	
+	public UpdateButton(MainActivity activity)
+	{
+		this.activity = activity;
+	}
+	
+	public void onClick(View v)
+	{
+		Toast.makeText(activity, "ñ¢é¿ëïÅI", Toast.LENGTH_LONG).show();
 	}
 }
