@@ -1,8 +1,8 @@
 <resources>
 
     <string name="app_name">電大バス時刻表</string>
-    <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="main_read_button">閲覧</string>
+    <string name="main_update_button">更新</string>
 
 </resources>
