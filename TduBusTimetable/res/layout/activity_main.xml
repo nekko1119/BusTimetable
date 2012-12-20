@@ -33,5 +33,26 @@
 	    android:layout_centerInParent="true"
 	    android:text="@string/app_name"
 	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	<TextView
+	    android:id="@+id/main_last_update_text"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:text="@string/last_update" />
+	
+	<TextView
+	    android:id="@+id/main_version_text"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@id/main_last_update_text"
+	    android:text="@string/version" />
+	
+	<TextView
+	    android:id="@+id/main_timetable_version_text"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@id/main_version_text"
+	    android:text="@string/timetable_version" />
 
 </RelativeLayout>

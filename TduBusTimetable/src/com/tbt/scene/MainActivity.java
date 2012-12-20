@@ -24,6 +24,9 @@ public class MainActivity extends Activity
         
         readButton = (Button)findViewById(R.id.main_read_button);
         readButton.setOnClickListener(new ReadButton(this));
+        
+        updateButton = (Button)findViewById(R.id.main_update_button);
+        updateButton.setOnClickListener(new UpdateButton(this));
     }
 }
 
