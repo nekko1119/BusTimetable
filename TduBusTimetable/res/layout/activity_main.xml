@@ -1,58 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    xmlns:tools="http://schemas.android.com/tools"
-	    android:layout_width="fill_parent"
-	    android:layout_height="fill_parent" >
-	    
-	<LinearLayout 
-	    android:id="@+id/LinearLayout"
-	    android:layout_width="fill_parent"
-	    android:layout_height="fill_parent"
-	    android:orientation="horizontal" >
-	
-	    <Button
-	        android:id="@+id/main_read_button"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_weight="1.00"
-	        android:text="@string/main_read_button" />
-		
-	    <Button
-	        android:id="@+id/main_update_button"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_weight="1.00"
-	        android:text="@string/main_update_button" />
-	
-	</LinearLayout>
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_timetable_version_text"
+        android:orientation="horizontal" >
+        
+        <Button	android:id="@+id/main_read_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/main_read_button" />
 
-	<TextView
-	    android:id="@+id/main_text"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_centerInParent="true"
-	    android:text="@string/app_name"
-	    android:textAppearance="?android:attr/textAppearanceLarge" />
-	
-	<TextView
-	    android:id="@+id/main_last_update_text"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentBottom="true"
-	    android:text="@string/last_update" />
-	
-	<TextView
-	    android:id="@+id/main_version_text"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_above="@id/main_last_update_text"
-	    android:text="@string/version" />
-	
-	<TextView
-	    android:id="@+id/main_timetable_version_text"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_above="@id/main_version_text"
-	    android:text="@string/timetable_version" />
-
-</RelativeLayout>
+        <Button	android:id="@+id/main_update_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/main_update_button" />
+    
+    </LinearLayout>
+    
+    <TextView android:id="@+id/main_last_update_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/last_update" />
+    
+    <TextView android:id="@+id/main_version_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_last_update_text"
+        android:text="@string/version" />
+    
+    <TextView android:id="@+id/main_timetable_version_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_version_text"
+        android:text="@string/timetable_version" />
+ 
+ </RelativeLayout>

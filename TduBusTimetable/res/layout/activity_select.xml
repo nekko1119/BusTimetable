@@ -1,42 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
 
     <TextView
         android:id="@+id/select_text"
         android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:layout_alignParentTop="true"
-	    android:layout_alignParentLeft="true"
 	    android:text="@string/select_text" />
     
      <Spinner
         android:id="@+id/select_time_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/select_area_spinner"
-        android:layout_marginBottom="80.0px"
         android:entries="@array/select_times"
+        android:layout_weight="1"
         android:prompt="@string/select_time_spinner" />
 
     <Spinner 
         android:id="@+id/select_area_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:entries="@array/select_areas"
+        android:layout_weight="1"
         android:prompt="@string/select_area_spinner" />
 
     <Button
         android:id="@+id/select_show_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-		android:layout_below="@+id/select_area_spinner"
-        android:layout_marginTop="80.0px"
+        android:layout_weight="1"
         android:text="@string/select_show_button" />
 
-</RelativeLayout>
+</LinearLayout>

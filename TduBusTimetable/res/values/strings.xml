@@ -4,7 +4,7 @@
     <string name="app_name">電大バス時刻表</string>
     <string name="timetable_version">スクールバス時刻表&#160;&#160;：&#160;&#160;平成23年9月16日改定版</string>
     <string name="version">version&#160;&#160;&#160;&#160;α</string>
-    <string name="last_update">last&#160;update&#160;:&#160;2012/12/19</string>
+    <string name="last_update">last&#160;update&#160;:&#160;2012/01/16</string>
     
     <!-- main activity -->
     
@@ -698,4 +698,6 @@
         <item></item>          
         <item></item>
     </string-array>
+    
+    <string name="timetable_switch_button">往来切り替え</string>
 </resources>

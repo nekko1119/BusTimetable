@@ -53,7 +53,7 @@ public class TransformTbtEnums
 		}
 	}
 	
-	public static String toStringFromArea(Context context, Area area)
+	public static String toString(Context context, Area area)
 	{
 		String[] areaString = context.getResources().getStringArray(R.array.select_areas);
 		switch(area)
@@ -109,7 +109,7 @@ public class TransformTbtEnums
 		}
 	}
 	
-	public static String toStringFromTime(Context context, Time time)
+	public static String toString(Context context, Time time)
 	{
 		String[] timeString = context.getResources().getStringArray(R.array.select_times);
 		switch(time)
@@ -122,6 +122,35 @@ public class TransformTbtEnums
 			return timeString[2];
 		case VACATION_SATURDAY:
 			return timeString[3];
+		default:
+			return null;
+		}
+	}
+	
+	public static Area reverse(Area area)
+	{
+		switch (area)
+		{
+		case TAKASAKA_TDU:
+			return Area.TDU_TAKASAKA;
+		case TDU_TAKASAKA:
+			return Area.TAKASAKA_TDU;
+		case KITASAKADO_TDU:
+			return Area.TDU_KITASAKADO;
+		case TDU_KITASAKADO:
+			return Area.KITASAKADO_TDU;
+		case KUMAGAYA_TDU:
+			return Area.TDU_KUMAGAYA;
+		case TDU_KUMAGAYA:
+			return Area.KUMAGAYA_TDU;
+		case KONOSU_TDU:
+			return Area.TDU_KONOSU;
+		case TDU_KONOSU:
+			return Area.KONOSU_TDU;
+		case TAKASAKI_TDU:
+			return Area.TDU_TAKASAKI;
+		case TDU_TAKASAKI:
+			return Area.TAKASAKI_TDU;
 		default:
 			return null;
 		}
