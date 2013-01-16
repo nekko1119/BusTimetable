@@ -8,11 +8,11 @@
     <TextView android:id="@+id/timetable_listview_hour"
     	android:layout_width="wrap_content"
     	android:layout_height="wrap_content"
-    	android:textAppearance="?android:attr/textAppearanceMedium"/>
+    	android:textSize="20sp"/>
     
     <TextView android:id="@+id/timetable_listview_minute"
         android:layout_width="wrap_content"
     	android:layout_height= "60dip"
-    	android:textAppearance="?android:attr/textAppearanceMedium"/>
+    	android:textSize="20sp"/>
     
 </LinearLayout>

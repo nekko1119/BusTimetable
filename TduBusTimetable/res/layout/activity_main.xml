@@ -14,12 +14,14 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_weight="1"
+            android:textSize="24sp"
             android:text="@string/main_read_button" />
 
         <Button	android:id="@+id/main_update_button"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_weight="1"
+            android:textSize="24sp"
             android:text="@string/main_update_button" />
     
     </LinearLayout>

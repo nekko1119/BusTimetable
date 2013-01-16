@@ -15,6 +15,7 @@
 	    	android:layout_width="0dip"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="1"
+	    	android:textSize="18sp"
 	    	android:textAppearance="?android:attr/textAppearanceMedium" />
 	    
 	    <Button
@@ -22,12 +23,13 @@
 	        android:layout_width="0dip"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"
+	        android:textSize="18sp"
 	        android:text="@string/timetable_switch_button" />
 	
 	</LinearLayout>
 	    
 	    <ListView android:id="@+id/timetable_listview"
 	        android:layout_width="fill_parent"
-	        android:layout_height="wrap_content"/>
+	        android:layout_height="wrap_content" />
 	    
 </LinearLayout>
